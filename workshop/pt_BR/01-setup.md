@@ -1,9 +1,9 @@
 <!-- l10n-sync: source-file="workshop/01-setup.md" -->
-# Parte 1: Configuração e Context Engineering
+# Parte 1: Configuração e engenharia de contexto
 
 ---
 
-Nesta parte você vai configurar seu ambiente de desenvolvimento **e** ensinar o Copilot sobre a base de código — para que cada prompt futuro comece com o contexto adequado.
+Nesta parte, você vai configurar seu ambiente de desenvolvimento **e** ensinar o Copilot sobre a base de código — assim, cada prompt futuro começará com o contexto adequado.
 
 ## Seção 1: Configuração Inicial
 
@@ -98,9 +98,9 @@ Use o caminho de instalação que corresponde à sua máquina:
 > ✅ **Agora você tem a pré-visualização do aplicativo em um terminal e o Copilot CLI pronto em outro.**
 <!-- track:cli:end -->
 
-## Seção 2: Context Engineering
+## Seção 2: Engenharia de contexto
 
-Context Engineering é como você ensina a IA sobre sua base de código. Quanto melhor o contexto, melhor será cada resposta futura.
+A engenharia de contexto é a forma de ensinar à IA sobre sua base de código. Quanto melhor o contexto, melhores serão as respostas futuras.
 
 <!-- track:vscode:start -->
 ### Tarefa 1: Gere Instruções do Workspace com /init
@@ -118,24 +118,26 @@ Vamos usar o comando integrado `/init` para gerar um arquivo de instruções do 
 
 > **Resultado:** Todas as futuras solicitações ao Copilot agora têm um mapa do seu workspace incorporado.
 
-### Tarefa 2: Agentes em Segundo Plano
+### Tarefa 2: Agentes em segundo plano
 
 **Agente em segundo plano local:**
 
-1. No painel de Chat, clique em **+** → **New background agent**
-2. Digite o prompt:
+1. No painel de Chat, clique em **+** para iniciar um novo chat.
+2. Na parte inferior da janela, altere **Local** para **Copilot CLI**.
+3. Insira o prompt:
 
    > "Add linting rules for unused vars and improve code style; fix any errors"
 
-3. Quando terminar, **Revise e Aplique** as alterações, depois delete a sessão.
+4. Quando terminar, **Revise e aplique** as alterações; depois, arquive a sessão se quiser.
 
 **Agente na nuvem:**
 
-1. Inicie outro agente em segundo plano com:
+1. No painel de Chat, clique em **+** para iniciar um novo chat.
+2. Na parte inferior da janela, altere **Local** para **Cloud**.
 
    > "Make the README more engaging as a landing page"
 
-> **Resultado:** Regras de linting adicionadas, erros corrigidos, README melhorado — tudo sem sair do seu editor.
+> **Resultado:** regras de lint adicionadas, erros corrigidos e README aprimorado — tudo sem sair do editor.
 
 ### Tarefa 3: Explore o Projeto
 

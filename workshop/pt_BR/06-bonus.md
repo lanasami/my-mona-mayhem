@@ -6,7 +6,7 @@
 Você construiu um aplicativo de GitHub Battle totalmente funcional! Agora é hora de ir além com **desafios abertos**.
 
 <!-- track:vscode:start -->
-Use **Agent Mode** para todos estes — descreva o que você quer e deixe o Copilot te ajudar a construir.
+Use o **Agent Mode** em todos eles — descreva o que você quer e deixe o Copilot ajudar na implementação.
 <!-- track:vscode:end -->
 
 <!-- track:cli:start -->
@@ -21,8 +21,8 @@ Depois que ambos os gráficos de contribuições carregarem, compare os totais e
 
 **O que construir:**
 - Compare as contribuições totais de ambos os usuários
-- Mostre **"🏆 {username} WINS! 🏆"** com um estilo comemorativo se houver um vencedor claro
-- Mostre **"🤝 IT'S A TIE! 🤝"** se as contribuições forem iguais
+- Mostre **"🏆 {username} VENCEU! 🏆"** com um estilo comemorativo se houver um vencedor claro
+- Mostre **"🤝 EMPATE! 🤝"** se as contribuições forem iguais
 - Adicione animação ou confete para mais efeito
 
 **Sugestão de prompt:**
@@ -51,9 +51,9 @@ Persista os resultados das batalhas para que os usuários possam ver seus confro
 
 **O que construir:**
 - Salve cada resultado de batalha no `localStorage` (nomes de usuário, totais, vencedor, timestamp)
-- Adicione uma seção **"Recent Battles"** abaixo da área principal de batalha
+- Adicione uma seção **"Batalhas recentes"** abaixo da área principal de batalha
 - Mostre as últimas 5–10 batalhas com resultados
-- Adicione um botão "Clear History"
+- Adicione um botão "Limpar histórico"
 
 **Sugestão de prompt:**
 > Save battle results to localStorage after each comparison. Add a "Recent Battles" section that displays the last 10 battles with usernames, contribution totals, the winner, and when the battle happened. Include a "Clear History" button.
@@ -68,7 +68,7 @@ Adicione efeitos sonoros retro arcade usando a Web Audio API — sem necessidade
 - Som de **inserir moeda** quando o botão "Battle!" for clicado
 - Som de **power up** quando os resultados carregarem com sucesso
 - Som de **explosão** quando ocorrer um erro (usuário não encontrado, falha na API)
-- Um botão de alternância para mutar/ativar som
+- Um botão para ativar ou desativar o som
 
 **Sugestão de prompt:**
 > Add retro arcade sound effects using the Web Audio API (no audio files). Play a coin insert sound on battle start, a power-up sound when results load, and an explosion sound on errors. Generate the sounds programmatically with oscillators and gain nodes. Include a mute toggle.
@@ -96,7 +96,7 @@ Adicione uma legenda de escala de cores que corresponda à paleta de cores do gr
 
 **O que construir:**
 - Uma legenda horizontal mostrando os níveis de intensidade de contribuições
-- Rótulos de **"Less"** a **"More"**
+- Rótulos de **"Menos"** a **"Mais"**
 - Use a paleta de cores real da resposta da API de contribuições do GitHub
 - Posicione-a perto dos gráficos de contribuições
 
@@ -110,10 +110,10 @@ Adicione uma legenda de escala de cores que corresponda à paleta de cores do gr
 Permita que os usuários compartilhem seus resultados de batalha com um único clique.
 
 **O que construir:**
-- Um botão **"📋 Share Results"** que aparece após uma batalha
+- Um botão **"📋 Compartilhar resultados"** que aparece após uma batalha
 - Copia um resumo formatado em texto para a área de transferência
 - Inclua nomes de usuário, totais de contribuições e o vencedor
-- Mostre uma breve mensagem de confirmação "Copied!"
+- Mostre uma breve mensagem de confirmação "Copiado!"
 
 **Sugestão de prompt:**
 > Add a "📋 Share Results" button that copies a formatted battle summary to the clipboard. The summary should include both usernames, their contribution totals, and who won. Use the Clipboard API and show a brief "Copied to clipboard!" confirmation.
@@ -147,7 +147,7 @@ Você completou o workshop **Mona Mayhem: GitHub Battle**! Aqui está o que voc�
 
 | Habilidade | O Que Você Praticou |
 |------------|---------------------|
-| **Context Engineering** | Dar ao Copilot os arquivos, instruções e restrições corretas |
+| **Engenharia de contexto** | Dar ao Copilot os arquivos, instruções e restrições adequadas |
 | **Planejamento** | Gerar e refinar planos de implementação antes de programar |
 | **Codificação Agêntica** | Delegar trabalho em múltiplos arquivos e múltiplas etapas ao Copilot |
 | **Iteração de Design** | Começar de uma direção visual e refinar até um resultado polido |

@@ -3,10 +3,10 @@
 
 ---
 
-Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte trata sobre dividir el trabajo para que puedas mejorar la responsividad, el manejo de errores y la calidad sin hacer todo en un solo bucle serial.
+Ahora que la aplicación funciona y tiene buen aspecto, es hora de pulirla. En esta parte repartirás el trabajo para mejorar la adaptación a distintos tamaños de pantalla, la gestión de errores y la calidad sin tener que hacerlo todo de forma secuencial.
 
 <!-- track:vscode:start -->
-## Tarea 1: Agente en Segundo Plano para Diseño Responsivo
+## Tarea 1: Agente en segundo plano para diseño adaptable
 
 1. En el panel de Chat, haz clic en **+** → **New background agent**.
 2. Ingresa este prompt:
@@ -21,7 +21,7 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
 3. Déjalo ejecutarse de forma independiente — no necesitas observarlo.
 4. Cuando termine, **Revisa** los cambios y haz clic en **Apply**.
 
-## Tarea 2: Agente en Segundo Plano para UX de Errores
+## Tarea 2: Agente en segundo plano para la experiencia de error
 
 1. Inicia otro agente en segundo plano.
 2. Ingresa este prompt:
@@ -35,7 +35,7 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
 
 3. Revisa los cambios cuando el agente termine y haz clic en **Apply**.
 
-## Tarea 3: Agente en la Nube para Variaciones (Opcional)
+## Tarea 3: Agente en la nube para crear variantes (opcional)
 
 1. Haz clic en **+** → **New cloud agent**.
 2. Ingresa este prompt:
@@ -49,11 +49,11 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
 3. Revisa las **sesiones de agentes** para monitorear el progreso.
 4. Revisa la variación de diseño en el PR que el agente en la nube crea.
 
-## Tarea 4: Verifica Todo
+## Tarea 4: Comprueba todo
 <!-- track:vscode:end -->
 
 <!-- track:cli:start -->
-## Tarea 1: Divide el Trabajo con `/fleet`
+## Tarea 1: Reparte el trabajo con `/fleet`
 
 En Copilot CLI, usa `/fleet` para dividir el trabajo entre subagentes paralelos, luego revisa el resultado combinado:
 
@@ -66,7 +66,7 @@ En Copilot CLI, usa `/fleet` para dividir el trabajo entre subagentes paralelos,
 
 Deja que el CLI orqueste el trabajo, luego inspecciona el resultado combinado con `/diff` antes de aprobar cualquier cosa.
 
-## Tarea 2: Delega una Variación (Opcional)
+## Tarea 2: Delega una variante (opcional)
 
 Si quieres probar un flujo de trabajo asíncrono en la nube, delega una variación de diseño:
 
@@ -76,7 +76,7 @@ Si quieres probar un flujo de trabajo asíncrono en la nube, delega una variaci�
 
 Esa tarea delegada debería crear un pull request que puedes revisar por separado mientras sigues trabajando localmente.
 
-## Tarea 3: Ejecuta una Revisión Agéntica
+## Tarea 3: Ejecuta una revisión agéntica
 
 Antes de terminar, pide a Copilot CLI una pasada de revisión:
 
@@ -86,7 +86,7 @@ Antes de terminar, pide a Copilot CLI una pasada de revisión:
 
 Revisa los hallazgos, corrige lo que consideres necesario, luego ejecuta `/diff` nuevamente para tener claro qué cambió.
 
-## Tarea 4: Verifica Todo
+## Tarea 4: Comprueba todo
 <!-- track:cli:end -->
 
 > **⚠️ ¿No ves los cambios?** Si alguna de las actualizaciones de pulido no aparece, detén el servidor de desarrollo (`Ctrl+C`) y reinicia con `npm run dev`, luego haz una recarga forzada (`Ctrl+Shift+R`) en tu navegador.
@@ -99,7 +99,7 @@ Ejecuta estos escenarios de prueba para asegurarte de que todo funciona:
 | Nombres de usuario válidos | Gráficos de contribuciones mostrados |
 | Nombre de usuario inválido | Error de la API con estilo retro |
 | Tecla Enter en el input | Activa la batalla |
-| Ancho móvil | Diseño responsivo de una sola columna |
+| Vista en pantalla móvil | Diseño adaptable de una sola columna |
 | Pasar el cursor sobre cuadros de contribución | Tooltip con fecha y cantidad |
 
 Compila para producción y confirma que no hay errores:
